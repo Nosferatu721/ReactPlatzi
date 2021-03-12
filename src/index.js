@@ -1,10 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import Badge from "./components/Badge";
 
-import './global.css';
-import App from './components/App';
+// const jsx = (
+//   <div>
+//     <h1>Hola, Soy Senku</h1>
+//     <p>Soy cientifico en Dr. Stone</p>
+//   </div>
+// );
 
-const container = document.getElementById('app');
+// const element = React.createElement(
+//   "div",
+//   {},
+//   React.createElement("h1", {}, "Hola, Soy Senku"),
+//   React.createElement("p", {}, "Soy cientifico en Dr. Stone")
+// );
 
-ReactDOM.render(<App />, container);
+const container = document.getElementById("app");
+
+// ReactDOM.render(__que__, __donde__);
+ReactDOM.render(<Badge />, container);

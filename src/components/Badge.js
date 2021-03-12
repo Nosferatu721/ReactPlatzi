@@ -1,33 +1,29 @@
-import React from 'react';
-
-import './styles/Badge.css';
-import confLogo from '../images/badge-header.svg';
+import React from "react";
+// Importar Imagen
+import logo from "../images/logo.svg";
+// Importar CSS
+import "../components/style/Badge.css";
 
 class Badge extends React.Component {
   render() {
     return (
       <div className="Badge">
-        <div className="Badge__header">
-          <img src={confLogo} alt="Logo de la conferencia" />
+        <div className="">
+          <img src={logo} alt="Logo Conf" />
         </div>
-
-        <div className="Badge__section-name">
-          <img
-            className="Badge__avatar"
-            src={this.props.avatarUrl}
-            alt="Avatar"
-          />
+        <div className="">
+          <img src="https://www.gravatar.com/avatar?d=identicon" alt="Avatar" />
           <h1>
-            {this.props.firstName} <br /> {this.props.lastName}
+            Elkin <br /> Torres
           </h1>
         </div>
-
-        <div className="Badge__section-info">
-          <h3>{this.props.jobTitle}</h3>
-          <div>@{this.props.twitter}</div>
+        <div className="">
+          <p>Frontend Enginer :3</p>
+          <p>@Nosferatu</p>
         </div>
-
-        <div className="Badge__footer">#platziconf</div>
+        <div className="">
+          <p>#PlatziConf</p>
+        </div>
       </div>
     );
   }
