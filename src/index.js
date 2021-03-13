@@ -21,4 +21,12 @@ import "./global.css";
 const container = document.getElementById("app");
 
 // ReactDOM.render(__que__, __donde__);
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(
+  <Badge
+    firstName="Elkin"
+    lastName="Torres"
+    age="20"
+    avatar="https://s.gravatar.com/avatar/1a7c5a12e5a46cca9ad5f5d20968ddc0?s=80"
+  />,
+  container
+);
