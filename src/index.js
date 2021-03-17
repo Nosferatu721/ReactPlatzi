@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // Components
-import Badge from "./components/Badge";
-import BadgeNew from "./pages/BadgeNew";
+import Badges from "./pages/Badges";
+//import BadgeNew from "./pages/BadgeNew";
 // Styles
 import "bootstrap/dist/css/bootstrap.css";
 import "./global.css";
@@ -24,4 +24,4 @@ import "./global.css";
 const container = document.getElementById("app");
 
 // ReactDOM.render(__que__, __donde__);
-ReactDOM.render(<BadgeNew />, container);
+ReactDOM.render(<Badges />, container);
